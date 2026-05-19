@@ -58,12 +58,14 @@
                         <div class="form-text">Format file harus berupa gambar (JPG, JPEG, PNG).</div>
                     </div>
 
-                    <div class="d-grid">
-                        <button type="submit" class="btn btn-success">
-                            🚀 Kirim Laporan
-                        </button>
-                    </div>
-
+                    <div class="d-grid" style="gap: 10px;">
+    <button type="submit" class="btn btn-success">
+        🚀 Kirim Laporan
+    </button>
+    <a href="index.php" style="text-align: center; display: block; padding: 10px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 6px; font-weight: bold;">
+        ❌ Batal / Kembali
+    </a>
+</div>
                 </form>
 
             </div>
