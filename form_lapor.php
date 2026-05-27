@@ -40,16 +40,16 @@
             </div>
             <div class="card-body">
                 
-                <form id="formPengaduan" action="proses_lapor.php" method="POST" enctype="multipart/form-data">
+                <form id="formPengaduan" action="proses_simpan.php" method="POST" enctype="multipart/form-data">
                     
                     <div class="mb-3">
                         <label for="nama_pelapor" class="form-label">Nama Pelapor</label>
-                        <input type="text" class="form-control" id="nama_pelapor" name="nama_pelapor" placeholder="Masukkan nama lengkap Anda">
+                        <input type="text" class="form-control" id="nama_pelapor" name="nama_pelapor" placeholder="Masukkan nama lengkap Anda" required>
                     </div>
 
                     <div class="mb-3">
                         <label for="isi_laporan" class="form-label">Isi Laporan / Pengaduan</label>
-                        <textarea class="form-control" id="isi_laporan" name="isi_laporan" rows="5" placeholder="Ceritakan detail kronologi kejadian atau keluhan Anda..."></textarea>
+                        <textarea class="form-control" id="isi_laporan" name="isi_laporan" rows="5" placeholder="Ceritakan detail kronologi kejadian atau keluhan Anda..." required></textarea>
                     </div>
 
                     <div class="mb-3">
@@ -59,13 +59,13 @@
                     </div>
 
                     <div class="d-grid" style="gap: 10px;">
-    <button type="submit" class="btn btn-success">
-        🚀 Kirim Laporan
-    </button>
-    <a href="index.php" style="text-align: center; display: block; padding: 10px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 6px; font-weight: bold;">
-        ❌ Batal / Kembali
-    </a>
-</div>
+                        <button type="submit" class="btn btn-success">
+                            🚀 Kirim Laporan
+                        </button>
+                        <a href="index.php" style="text-align: center; display: block; padding: 10px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 6px; font-weight: bold;">
+                            ❌ Batal / Kembali
+                        </a>
+                    </div>
                 </form>
 
             </div>
