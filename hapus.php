@@ -1,0 +1,11 @@
+<?php
+session_start();
+if($_SESSION['status'] != "login"){
+    header("location:login.php");
+    exit();
+}
+include 'koneksi.php';
+$id = $_GET['id'];
+mysqli_query($koneksi, "DELETE FROM laporan WHERE id='$id'");
+header("location:dasbor.php");
+?>
